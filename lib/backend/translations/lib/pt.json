@@ -290,5 +290,13 @@
   "validators.min-length.singular": "Deve ser pelo menos 1 caractere",
   "validators.not.match": "Sem coincidência",
   "validators.password.not.match": "As senhas não coincidem",
-  "validators.required": "Requerido"
+  "validators.required": "Requerido",
+  "home.presentation.site-description": "Nossa América Verde apresenta um Plano de Cooperação latino-americana com 14 medidas concretas de transformação produtiva, econômica e social para a década 2020-2030. Estruturadas com base em três princípios norteadores, as propostas buscam reduzir drasticamente a emissão de gases de efeito estufa, enfrentar a emergência climática e derrotar a pobreza, a precariedade e a desigualdade.",
+  "home.presentation.steps-instructions": "Convidamos todas e todos a colaborar no processo participativo do plano 2020-2030 e ajudar a construir uma América Latina com justiça social, econômica e ambiental.",
+  "home.presentation.step1.title": "Conheça as propostas",
+  "home.presentation.step1.text": "Acesse o Plano de Cooperação 2020-2030 na íntegra.",
+  "home.presentation.step2.title": "Participe",
+  "home.presentation.step2.text": "Dê sua opinião e colabore com as 14 propostas do Plano.  ",
+  "home.presentation.step3.title": "Saiba mais",
+  "home.presentation.step3.text": "Acesse o site do movimento Nossa América Verde."
 }
