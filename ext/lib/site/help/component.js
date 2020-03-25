@@ -4,21 +4,21 @@ import t from 't-component'
 import Footer from 'lib/frontend/site/footer/component'
 import Sidebar from 'ext/lib/site/help/sidebar/component'
 import MarkdownGuide from 'lib/frontend/site/help/md-guide/component'
-import * as articles from './articles'
+import {articlesES, articlesPT} from './articles'
 import Stats from './stats/component'
-
+import config from 'lib/config'
 
 export default class HelpLayout extends PureComponent {
   articles = [
     {
       title: '¿Cómo funciona?',
-      Content: () => <Content content={articles.como} />,
+      Content: () => <Content content={config.locale == 'es' ? articlesES.como : articlesPT.como} />,
       slug: 'como-funciona',
       path: '/ayuda/como-funciona'
     },
     {
       title: 'Acerca de este sitio',
-      Content: () => <Content content={articles.acerca} />,
+      Content: () => <Content content={config.locale == 'es' ? articlesES.acerca : articlesPT.acerca} />,
       slug: 'acerca',
       path: '/ayuda/acerca'
     },
@@ -30,13 +30,13 @@ export default class HelpLayout extends PureComponent {
     },
     {
       title: t('help.tos.title'),
-      Content: () => <Content content={articles.tos} />,
+      Content: () => <Content content={config.locale == 'es' ? articlesES.tos : articlesPT.tos} />,
       slug: 'terminos-y-condiciones',
       path: '/ayuda/terminos-y-condiciones'
     },
     {
       title: t('help.pp.title'),
-      Content: () => <Content content={articles.pp} />,
+      Content: () => <Content content={config.locale == 'es' ? articlesES.pp : articlesPT.pp} />,
       slug: 'privacidad',
       path: '/ayuda/privacidad'
     },
@@ -49,6 +49,7 @@ export default class HelpLayout extends PureComponent {
   ]
 
   render () {
+    console.log(articlesPT);
     const article = this.props.params.article || this.articles[0].slug
     const active = this.articles.find((art) => art.slug === article)
 
