@@ -1,4 +1,8 @@
 {
+  "availableLocales": [
+    "es",
+    "pt"
+  ],
   "locale": "es",
   "enforceLocale": true,
   "multiForum": true,
