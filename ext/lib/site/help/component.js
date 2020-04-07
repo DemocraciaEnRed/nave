@@ -11,19 +11,19 @@ import config from 'lib/config'
 export default class HelpLayout extends PureComponent {
   articles = [
     {
-      title: '¿Cómo funciona?',
+      title: t('help.how-it-works.title'),
       Content: () => <Content content={config.locale == 'es' ? articlesES.como : articlesPT.como} />,
       slug: 'como-funciona',
       path: '/ayuda/como-funciona'
     },
     {
-      title: 'Acerca de este sitio',
+      title: t('help.about.title'),
       Content: () => <Content content={config.locale == 'es' ? articlesES.acerca : articlesPT.acerca} />,
       slug: 'acerca',
       path: '/ayuda/acerca'
     },
         {
-      title: 'Estadísticas',
+      title: t('help.stats.title'),
       Content: Stats,
       slug: 'estadisticas',
       path: '/ayuda/estadisticas'
@@ -61,7 +61,7 @@ export default class HelpLayout extends PureComponent {
               <Link to='/'>Consultas</Link>
             </li>
             <li className='breadcrumb-item active'>
-              <Link to='/ayuda'>Ayuda</Link>
+              <Link to='/ayuda'>{t("help.title")}</Link>
             </li>
             <li className='breadcrumb-item active'>
               <span>{active.title}</span>
