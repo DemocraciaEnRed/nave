@@ -126,13 +126,13 @@ export default class ForumTable extends Component {
         <table className="table">
           <thead>
             <tr>
-              <th colSpan="2" className="bg-primary">Estadisticas generales de la consulta en general</th>
+              <th colSpan="2" className="bg-primary">{t("admin-stats.forum.title")}</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>
-                Cantidad de comentarios y respuestas en total
+                {t("admin-stats.comments.total")}
                 </td>
               <td className="bg-light text-center">
                 {this.state.totalCommentsAndRepliesAcrossTopics}
@@ -140,7 +140,7 @@ export default class ForumTable extends Component {
             </tr>
             <tr>
               <td>
-                Cantidad de comentarios primarios
+                {t("admin-stats.comments.primary")}
                 </td>
               <td className="bg-light text-center">
                 {this.state.totalCommentsAcrossTopics}
@@ -148,7 +148,7 @@ export default class ForumTable extends Component {
             </tr>
             <tr>
               <td>
-                Cantidad participantes únicos
+                {t("admin-stats.comments.uniq")}
                 </td>
               <td className="bg-light text-center">
                 {this.state.uniqueParticipants}
@@ -156,7 +156,7 @@ export default class ForumTable extends Component {
             </tr>
             <tr>
               <td>
-                Media de comentarios por eje
+                {t("admin-stats.comments.topics-average")}
                 </td>
               <td className="bg-light text-center">
                 {this.state.averageCommentsPerTopic}
@@ -164,7 +164,7 @@ export default class ForumTable extends Component {
             </tr>
             <tr>
               <td>
-                Comentarios marcados como ⚑ SPAM
+                {t("admin-stats.comments.spam")}
                 </td>
               <td className="bg-light text-center">
                 {this.state.totalSpamComments}
@@ -172,7 +172,7 @@ export default class ForumTable extends Component {
             </tr>
             <tr>
               <td>
-                Comentarios sin respuestas por oficiales
+                {t("admin-stats.comments.unanswered")}
                 </td>
               <td className="bg-light text-center">
                 {this.state.totalWithoutOfficialReply}
@@ -180,7 +180,7 @@ export default class ForumTable extends Component {
             </tr>
             <tr>
               <td>
-                Porcentaje de comentarios atendidos
+                {t("admin-stats.comments.atended")}
                 </td>
               <td className="bg-light text-center">
                 {Math.ceil(((this.state.totalCommentsAcrossTopics - this.state.totalWithoutOfficialReply) / this.state.totalCommentsAcrossTopics) * 100)} %
@@ -190,7 +190,7 @@ export default class ForumTable extends Component {
               this.state.marksCount.map(markCount => (
                 <tr>
                   <td>
-                    Comentarios marcados como <span className="badge-mark">#{markCount.name}</span>
+                    {t("admin-stats.comments.marked-as")} <span className="badge-mark">#{markCount.name}</span>
                   </td>
                   <td className="bg-light text-center">
                     {markCount.count}

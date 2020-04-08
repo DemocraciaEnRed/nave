@@ -31,7 +31,7 @@ class CommentContainer extends Component {
     this.markComment = this.markComment.bind(this);
     this.unmarkComment = this.unmarkComment.bind(this);
   }
-    
+
   componentDidMount(){
     this.checkIfAnswered()
     this.checkIfFlaged()
@@ -65,7 +65,7 @@ class CommentContainer extends Component {
   closeReply(e) {
     this.setState((state) => ({
       showReply: false
-    }))  
+    }))
   }
 
   handleTextChange = (evt) => {
@@ -88,7 +88,7 @@ class CommentContainer extends Component {
         })
     }).then(res => res.ok && res.json())
       .then(res => {
-        this.props.showNotifyChanges('Respuesta guardada')
+        this.props.showNotifyChanges(t("admin-stats.comment-actions.notification.reply-saved"))
         this.props.updateAll()
       })
       .catch(err => {
@@ -112,9 +112,9 @@ class CommentContainer extends Component {
     }).then(res => res.json())
       .then(res => {
         if(res.error && res.error.code === 'NO_AUTO_FLAG'){
-          this.props.showNotifyChanges('No podes marcar tu propio comentario como Spam')
+          this.props.showNotifyChanges(t("admin-stats.comment-actions.notification.cant-mark-spam"))
         } else {
-        this.props.showNotifyChanges('Comentario marcado como Spam')
+        this.props.showNotifyChanges(t("admin-stats.comment-actions.notification.marked-spam"))
         this.props.updateAll()
         }
       })
@@ -137,7 +137,7 @@ class CommentContainer extends Component {
         }
     }).then(res => res.ok && res.json())
       .then(res => {
-        this.props.showNotifyChanges('Comentario eliminado')
+        this.props.showNotifyChanges(t("admin-stats.comment-actions.notification.comment-deleted"))
         this.props.updateAll()
       })
       .catch(err => {
@@ -159,7 +159,7 @@ class CommentContainer extends Component {
         }
     }).then(res => res.ok && res.json())
       .then(res => {
-        this.props.showNotifyChanges('Respuesta eliminada')
+        this.props.showNotifyChanges(t("admin-stats.comment-actions.notification.reply-deleted"))
         this.props.updateAll()
       })
       .catch(err => {
@@ -182,7 +182,7 @@ class CommentContainer extends Component {
         }
     }).then(res => res.ok && res.json())
       .then(res => {
-        this.props.showNotifyChanges('Comentario dejo de marcarse como spam')
+        this.props.showNotifyChanges(t("admin-stats.comment-actions.notification.unmarked-spam"))
         this.props.updateAll()
       })
       .catch(err => {
@@ -258,7 +258,7 @@ markComment(mark){
         })
     }).then(res => res.ok && res.json())
       .then(res => {
-        this.props.showNotifyChanges(`El comentario se marcó como ${mark}`)
+        this.props.showNotifyChanges(t("admin-stats.comment-actions.notification.marked-as", {mark}))
         this.props.updateAll()
       })
       .catch(err => {
@@ -283,7 +283,7 @@ markComment(mark){
         })
     }).then(res => res.ok && res.json())
       .then(res => {
-        this.props.showNotifyChanges(`Se quitó el marcado #${mark} del comentario`)
+        this.props.showNotifyChanges(t("admin-stats.comment-actions.notification.unmarked-as", {mark}))
         this.props.updateAll()
       })
       .catch(err => {
@@ -302,7 +302,7 @@ markComment(mark){
     return (
       <div>
       <div className={this.getClassNameContainer()}>
-      
+
         <button className="btn btn-xs btn-toggle-shrink" onClick={this.toggleShrink}>
         { this.state.shrinked ? "▼" : "▲" }
         </button>
@@ -310,9 +310,9 @@ markComment(mark){
         {
             this.state.showReply &&
           <div className="reply-comment-container">
-            <textarea className="form-control" rows="3" onChange={this.handleTextChange} 
+            <textarea className="form-control" rows="3" onChange={this.handleTextChange}
             maxLength='4096' minLength='1' placeholder="Escriba su respuesta..."></textarea>
-            <button className="btn btn-xs btn-primary pull-right" onClick={this.submitReply}>Responder</button>
+            <button className="btn btn-xs btn-primary pull-right" onClick={this.submitReply}>{t("admin-stats.comment-actions.answer")}</button>
             <button className="btn btn-xs btn-default pull-left" onClick={this.closeReply}>X</button>
           </div>
           }
@@ -326,58 +326,58 @@ markComment(mark){
           <div className="media-body">
           <p className="comment-text"><b>{comment.author.displayName}</b>
           {
-            this.isOfficial(comment.author) && <span className="text-primary"><b>&nbsp;&nbsp;★ Cuenta oficial</b></span>
+            this.isOfficial(comment.author) && <span className="text-primary"><b>&nbsp;&nbsp;★ {t("admin-stats.comment-actions.official-account")}</b></span>
           }
           &nbsp;&nbsp;
           {comment.text}</p>
           </div>
         </div>
           <div className="actions">
-            <a className="anchor" onClick={this.toggleReply}>↵ Responder</a>
+            <a className="anchor" onClick={this.toggleReply}>↵ {t("admin-stats.comment-actions.answer")}</a>
             {
               this.state.meFlaggedIt ?
-               <a className="anchor" onClick={this.unmarkFlag}>⚑ Quitar spam</a>
-               : <a className="anchor" onClick={this.markFlag}>⚑ Marcar como spam</a>
+               <a className="anchor" onClick={this.unmarkFlag}>⚑ {t("admin-stats.comment-actions.spam.remove")}</a>
+               : <a className="anchor" onClick={this.markFlag}>⚑ {t("admin-stats.comment-actions.spam.mark-as")}</a>
 
             }
-            <a className="anchor" onClick={this.deleteComment}>✗ Eliminar</a>
+            <a className="anchor" onClick={this.deleteComment}>✗ {t("admin-stats.comment-actions.delete")}</a>
           </div>
           {
             comment.replies.map( r => (
               <div className="reply-container">
                 <p className="reply-text"><b>{r.author.displayName}</b>
                 {
-                  this.isOfficial(r.author) && <span className="text-primary"><b>&nbsp;&nbsp;★ Cuenta oficial</b></span>
+                  this.isOfficial(r.author) && <span className="text-primary"><b>&nbsp;&nbsp;★ {t("admin-stats.comment-actions.official-account")}</b></span>
                 }
-                &nbsp;&nbsp;{r.text} - <a className="delete-anchor" onClick={() => this.deleteReply(r._id)}>✗ Eliminar</a></p>
+                &nbsp;&nbsp;{r.text} - <a className="delete-anchor" onClick={() => this.deleteReply(r._id)}>✗ {t("admin-stats.comment-actions.delete")}</a></p>
               </div>
               )
             )
           }
           <div className="markers">
-            <p>Marcar comentario como...</p>
+            <p>{t("admin-stats.comment-actions.mark-as")}</p>
             {
               availableMarks.map( m => {
                 if(comment.adminMarks.includes(m)){
                   return <a className="marker-anchor unmark-anchor" onClick={() => this.unmarkComment(m)}>#{m}</a>
-                } 
+                }
                 return <a className="marker-anchor mark-anchor" onClick={() => this.markComment(m)}>#{m}</a>
               })
             }
           </div>
-          
+
         </div>
         <div className="info-comment">
-        Publicado el {(new Date(comment.createdAt)).toLocaleString()} - {comment.replies.length} Respuestas - {comment.score} Puntos&nbsp;&nbsp;
+        {t("admin-stats.comment-actions.published-at")} {(new Date(comment.createdAt)).toLocaleString()} - {comment.replies.length} {t("admin-stats.comment-actions.replys")} - {comment.score} {t("admin-stats.comment-actions.score")}&nbsp;&nbsp;
         {
           this.state.answeredByOficial ?
-          <span className="badge-answered">✔ Contestado por un oficial</span>
-          : <span className="badge-not-answered">✖ Sin contestar por un oficial</span>
+          <span className="badge-answered">✔ {t("admin-stats.comment-actions.officially-answerd")}</span>
+          : <span className="badge-not-answered">✖ {t("admin-stats.comment-actions.officially-unanswerd")}</span>
 
         }
         {
           this.state.flagedByOficial &&
-          <span className="badge-not-answered">⚑ Marcado SPAM por un oficial</span>
+          <span className="badge-not-answered">⚑ {t("admin-stats.comment-actions.officially-spam")}</span>
         }
         {
           comment.adminMarks && comment.adminMarks.length > 0 && (
