@@ -26,12 +26,10 @@ overrides = {
   'templates.topic-published.body': 'Un nuevo tema fue publicado:',
   'templates.topic-published.body2': 'Por favor <a href=\"{url}\">cliquea aquí</a> para verlo.'
 }
-console.log(overrides['templates.email.signature'])
 Object.assign(tNotifier.es, overrides)
 
 t = ts.pt
 overrides = {
   'templates.email.signature': `${t["common.app-name"]} - ${t["homepage.presentation.slogan"]}`,
 }
-console.log(overrides['templates.email.signature'])
 Object.assign(tNotifier.pt, overrides)
