@@ -4,7 +4,7 @@ html(lang=locale)
     //-
     //-   Basic Page Needs
     //-   ==================================================
-    title= config.organizationName
+    title= translations["common.app-name"]
 
     meta(charset='utf-8')
     meta(name='description', content=config.socialshare.siteDescription)
@@ -21,8 +21,8 @@ html(lang=locale)
     script(src='https://cdn.polyfill.io/v1/polyfill.min.js')
 
     link(rel='icon', type='image/x-icon', href=config.favicon)
-    
-    
+
+
     //-
     //-   Extra header
     //-   ==================================================
@@ -39,18 +39,18 @@ html(lang=locale)
       window.config.locale = '#{locale}';
       window.config.defaultForum = '#{defaultForum}';
       window.translations = !{JSON.stringify(translations)};
-      
+
     - if (config.segmentKey)
       include includes/segment
-      
+
     - if (config.env !== 'development' && config.warnHTTP && config.protocol !== 'https')
       include includes/ssl-warning
-    
+
     //-
     //-   Scripts
     //-   ==================================================
     block scripts
-    
+
     //-
     //-   Overrideable default Fonts
     //-   ==================================================

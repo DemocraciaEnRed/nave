@@ -270,7 +270,7 @@
   "comments.answered": "respondidos",
   "comments.participants-who-commented": "Participantes que comentaron",
 
-  "common.app-name": "DemocracyOS",
+  "common.app-name": "Nuestra América Verde",
   "common.auth-error": "Tu solicitud no fue autorizada.",
   "common.back": "Volver",
   "common.cancel": "Cancelar",
@@ -372,6 +372,15 @@
   "homepage.forums.subtitle-llamado": "Las propuestas que comprenden esta convocatoria son:",
   "homepage.forums.subtitle-propuestas": "Las propuestas que comprenden esta consulta son:",
   "homepage.forums.subtitle-ejes": "Los ejes que comprenden esta consulta son:",
+  "homepage.presentation.slogan": "Un llamado urgente para enfrentar la emergencia climática e invertir en un futuro sostenible para todas y todos.",
+  "homepage.presentation.site-description": "presenta un Plan de Cooperación Latinoamericana con 14 medidas concretas de transformación productiva, económica y social para la década 2020-2030. Estructuradas a partir de tres grandes principios rectores, las propuestas buscan reducir drásticamente la emisión de gases de efecto invernadero, enfrentar la emergencia climática y vencer la pobreza, la precariedad y la desigualdad.",
+  "homepage.presentation.steps-instructions": "Invitamos a todas y todos a colaborar en el proceso participativo del plan 2020-2030 y ayudar a construir una América Latina con justicia social, económica y ambiental. ",
+  "homepage.presentation.step1.title": "Conozca las propuestas",
+  "homepage.presentation.step1.text": "Acceder al Plan de Cooperación 2020-2030 completo.",
+  "homepage.presentation.step2.title": "Colabore",
+  "homepage.presentation.step2.text": "Dar su opinión y colaborar con las 14 propuestas del Plan.",
+  "homepage.presentation.step3.title": "Saber más",
+  "homepage.presentation.step3.text": "Acceder al sitio web del movimiento Nuestra América Verde.",
 
   "invalid.password": "Contraseña no válida",
 
