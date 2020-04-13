@@ -29,7 +29,6 @@ services:
       # Organización
       - ORGANIZATION_EMAIL=miconsultadigital@midominio.com.ar
       - ORGANIZATION_NAME=Mi Consulta Digital
-      - BAJADA_PLATAFORMA=Construyamos un país más abierto, transparente y colaborativo.
       # Social media y email settings
       - SOCIALSHARE_SITE_NAME=Mi Consulta Digital
       - SOCIALSHARE_SITE_DESCRIPTION=Plataforma de participación ciudadana
