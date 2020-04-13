@@ -433,8 +433,8 @@
   "privileges-alert.not-can-vote-and-comment": "Esta es una Comunidad restringida, necesitas permiso para participar.",
 
   "proposal-behavior.hierarchy.result": "Resultados",
-  "proposal-behavior.hierarchy.show.answer": "Mostrar mi respuesta",
-  "proposal-behavior.hierarchy.show.results": "Mostrar resultados",
+  "proposal-behavior.hierarchy.show.answer": "",
+  "proposal-behavior.hierarchy.show.results": "",
   "proposal-behavior.hierarchy": "Podés organizar o arrastrar las opciones en el orden que mas se ajuste a tus prioridades.",
   "proposal-article.article.alert.learn-more": "Más información",
   "proposal-article.article.alert.text": "Esta es una versión demo de DemocracyOS.",
@@ -587,6 +587,11 @@
   "topics.actions.feedback": "Hemos registrado tu respuesta",
   "topics.actions.thanks": "¡Gracias por participar!",
   "topics.actions.poll.do": "Votar",
+  "topics.actions.exaplin.cause": "Brindá tu apoyo a la iniciativa",
+  "topics.actions.exaplin.slider": "Deslizá hacia el lado que se incline más hacia tu opinión",
+  "topics.actions.exaplin.hierarchy": "Podés organizar o arrastrar las opciones en el orden que más se ajuste a tus prioridades",
+  "topics.actions.exaplin.vote": "Elegí la opción que más se ajuste a tu posición",
+  "topics.actions.voted-message": "Tan pronto cierre la consulta podrás visualizar los resultados.",
 
   "validators.checked": "Elegir una opción",
   "validators.input.not-exists": "No existe el elemento {name}",
