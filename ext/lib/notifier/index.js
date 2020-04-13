@@ -67,3 +67,24 @@ function replaceVars (template, vars) {
 }
 
 notifierTemplates.pug = _pug
+
+// overrides de lógicas de mails
+const notifier = require('democracyos-notifier')
+const log = require('debug')('democracyos:ext:notifier')
+
+// Wait until the notifier is initialized
+const interval = setInterval(function () {
+  if (!notifier.mailer) return
+
+  clearInterval(interval)
+
+  notifier.init().then(() => {
+
+    ;[ require('./jobs/welcome-email') ].forEach((job) => job(notifier))
+
+    log('Ext notifier email jobs loaded')
+
+  }).catch((err) => {
+    console.error('Error loading ext/lib/notifier: ', err)
+  })
+}, 200)
