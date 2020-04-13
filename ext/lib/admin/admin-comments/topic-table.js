@@ -114,7 +114,7 @@ export default class TopicTable extends Component {
     return (
       <div>
         <div className="topic-name-container">
-          <h5 className="topic-subtitle">Eje de la consulta</h5>
+          <h5 className="topic-subtitle">{t("admin-stats.topic.title")}</h5>
           <a
             href={`/${forum.name}/consulta/${topic.id}`}
           >
@@ -125,13 +125,13 @@ export default class TopicTable extends Component {
           <table className="table">
             <thead>
               <tr>
-                <th colSpan="2" className="bg-primary">Estadisticas generales del eje</th>
+                <th colSpan="2" className="bg-primary">{t("admin-stats.topic.subtitle")}</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>
-                  Comentarios y respuestas en total
+                  {t("admin-stats.comments.total")}
                 </td>
                 <td className="bg-light text-center">
                   {this.state.totalCommentsAndRepliesAcrossTopics}
@@ -139,7 +139,7 @@ export default class TopicTable extends Component {
               </tr>
               <tr>
                 <td>
-                  Comentarios primarios
+                  {t("admin-stats.comments.primary")}
                 </td>
                 <td className="bg-light text-center">
                   {this.state.totalCommentsAcrossTopics}
@@ -147,7 +147,7 @@ export default class TopicTable extends Component {
               </tr>
               <tr>
                 <td>
-                  Cantidad participantes únicos
+                  {t("admin-stats.comments.uniq")}
                 </td>
                 <td className="bg-light text-center">
                   {this.state.uniqueParticipants}
@@ -155,7 +155,7 @@ export default class TopicTable extends Component {
               </tr>
               <tr>
                 <td>
-                  Comentarios marcados como ⚑ SPAM
+                  {t("admin-stats.comments.spam")}
                 </td>
                 <td className="bg-light text-center">
                   {this.state.totalSpamComments}
@@ -163,7 +163,7 @@ export default class TopicTable extends Component {
               </tr>
               <tr>
                 <td>
-                  Comentarios sin respuestas por oficiales
+                  {t("admin-stats.comments.unanswered")}
                 </td>
                 <td className="bg-light text-center">
                   {this.state.totalWithoutOfficialReply}
@@ -171,7 +171,7 @@ export default class TopicTable extends Component {
               </tr>
               <tr>
                 <td>
-                  Porcentaje de comentarios atendidos
+                  {t("admin-stats.comments.atended")}
                 </td>
                 <td className="bg-light text-center">
                   {Math.ceil(((this.state.totalCommentsAcrossTopics - this.state.totalWithoutOfficialReply) / this.state.totalCommentsAcrossTopics) * 100)} %
@@ -181,7 +181,7 @@ export default class TopicTable extends Component {
                 marksCount.map(markCount => (
                   <tr>
                     <td>
-                      Comentarios marcados como <span className="badge-mark">#{markCount.name}</span>
+                      {t("admin-stats.comments.marked-as")} <span className="badge-mark">#{markCount.name}</span>
                     </td>
                     <td className="bg-light text-center">
                       {markCount.count}

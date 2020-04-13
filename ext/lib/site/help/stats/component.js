@@ -56,27 +56,27 @@ export default class Stats extends PureComponent {
     return (
       <div className="stats">
         <div className="forums-total-container clearfix">
-          <div className="data-title text-center">Consultas en total</div>
+          <div className="data-title text-center">{t("help.stats.forums")}</div>
           <div className="data-value text-center">{this.state.countForums}</div>
         </div>
         <br/>
         <div className="row">
           <div className="col-md-6">
-          <h4 className="subtitle text-center">Total de ejes</h4>
+          <h4 className="subtitle text-center">{t("help.stats.topics")}</h4>
           <h2 className="text-center text-primary">{this.state.countTopics}</h2>
           </div>
                     <div className="col-md-6">
-          <h4 className="subtitle text-center">Total<br></br>comentarios</h4>
+          <h4 className="subtitle text-center">{t("help.stats.comments.total")}</h4>
           <h2 className="text-center text-primary">{this.state.totalComments}</h2>
           </div>
         </div>
         <div className="row">
           <div className="col-md-6">
-          <h4 className="subtitle text-center">Comentarios<br></br>atentidos</h4>
+          <h4 className="subtitle text-center">{t("help.stats.comments.attended")}</h4>
           <h2 className="text-center text-primary">{this.state.totalWithOfficialReply}</h2>
           </div>
           <div className="col-md-6">
-          <h4 className="subtitle text-center">Cantidad de<br></br>participantes</h4>
+          <h4 className="subtitle text-center">{t("help.stats.participants")}</h4>
           <h2 className="text-center text-primary">{this.state.uniqueParticipants}</h2>
           </div>
         </div>

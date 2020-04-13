@@ -30,18 +30,18 @@
           input(type='hidden', name='forum', value=form.forum)
         ul.form-messages
         .form-group
-          label= 'Título de la propuesta'
+          label= t("admin-topics-form.llamado.proposal-title")
           - if (te('admin-topics-form.description.mediaTitle'))
             span.help-text= t('admin-topics-form.description.mediaTitle')
           input.form-control(type='text', maxlength='200', id='mediaTitle', name='mediaTitle', placeholder=t('admin-topics-form.label.mediaTitle'), value=topic.mediaTitle, validate='required')
         .form-group.problema
-          label= '¿Qué  problema querés resolver?'
+          label= t("admin-topics-form.llamado.problem")
           textarea.form-control(name='extra.problema')= topic.extra && topic.extra.problema
         .form-group
-          label= '¿Cuál es tu propuesta?'
+          label= t("admin-topics-form.llamado.proposal")
           textarea.form-control(name='body')= topic.body
         .form-group.tag
-          label= 'Elegí la categoría asociada a tu propuesta'
+          label= t("admin-topics-form.llamado.category")
           - if (te('admin-topics-form.description.tag'))
             span.help-text= t('admin-topics-form.description.tag')
           select.form-control(name='tag', validate='required')
@@ -50,12 +50,12 @@
               option(selected=tag.id === topicTag, value=tag.id)
                 = tag.name
         .form-group
-          label= 'Elegí etiquetas de los temas relacionados a tu propuesta'
+          label= t("admin-topics-form.llamado.choose-tags")
           - if (te('admin-topics-form.description.tags'))
-            span.help-text= 'Separarlos apretando ENTER o TAB'
+            span.help-text= t("admin-topics-form.llamado.help-tags")
           div.tags-autocomplete
           - if (forum.initialTags && forum.initialTags.length > 0)
-            span.help-text= 'Separarlos apretando ENTER o TAB'
+            span.help-text= t("admin-topics-form.llamado.help-tags")
             - each tag in forum.initialTags
               button.btn.btn-default.btn-sm.forum-tag(data-value=tag, type='button', disabled=(topic.tags && !!~topic.tags.indexOf(tag)))= tag
         //.form-group.closingAt
@@ -76,7 +76,7 @@
               i.icon-trash
 
         .form-group
-          label='Acá podés compartir archivos o enlaces de referencia'
+          label=t("admin-topics-form.llamado.links")
           .topic-links
             - // create a disabled link to force empty array value
             input(type='hidden', name='links[][_id]', disabled)
@@ -90,7 +90,7 @@
               = '+ ' + t('admin-topics-form.button.add-link')
 
         .form-group
-          label= 'Subí una foto que represente tu propuesta'
+          label= t("admin-topics-form.llamado.photo")
           - if (te('admin-topics-form.description.coverUrl'))
             span.help-text= t('admin-topics-form.description.coverUrl')
           input.form-control(type='text', maxlength='254', id='coverUrl', name='coverUrl', placeholder=t('admin-topics-form.placeholder.coverUrl'), value=topic.coverUrl, validate='url')

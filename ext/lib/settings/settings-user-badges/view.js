@@ -143,7 +143,7 @@ export default class UserBadgeView extends FormView {
 
   onVerifySuccess () {
     this.updateVerifiedUI({extra:{verified:true}})
-    this.messages([t('settings.user-badges.verify-success')], 'verify-success')
+    this.messages([t('settings.user-badges.verify.success')], 'verify-success')
   }
 
   /**

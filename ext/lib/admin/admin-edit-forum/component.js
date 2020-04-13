@@ -90,7 +90,7 @@ export default class EditForum extends Component {
       })
       .catch(console.error)
   }
-    
+
   render () {
     const {
       title,
@@ -166,10 +166,10 @@ export default class EditForum extends Component {
               <label>{t('forum.form.contentType.label')}</label>
               <div className='form-group clearfix contentType'>
                 <select value={contentType} onChange={this.handleChangeExtra('contentType')} placeholder="Elija una opcion">
-                  <option value="" disabled>- Elija una opción -</option>
-                  <option value="ejes">Ejes de consulta</option>
-                  <option value="propuestas">Propuestas</option>
-                  <option value="llamado">Convocatoria</option>
+                  <option value="" disabled>- {t("forum.form.contentType.option.choose")} -</option>
+                  <option value="ejes">{t("forum.form.contentType.option.ejes")}</option>
+                  <option value="propuestas">{t("forum.form.contentType.option.propuestas")}</option>
+                  <option value="llamado">{t("forum.form.contentType.option.convocatoria")}</option>
                 </select>
               </div>
             </fieldset>
@@ -208,7 +208,7 @@ export default class EditForum extends Component {
               </div>
             </fieldset>
             <fieldset>
-              <label>Fecha de cierre</label>
+              <label>{t('admin-topics-form.label.closingAt')}</label>
               <div className='form-group clearfix'>
                 <input
                   name='closingAt'
@@ -259,7 +259,7 @@ export default class EditForum extends Component {
               </div>
             </fieldset>
             <fieldset>
-              <label>Autor URL</label>
+              <label>{t("admin-topics-form.label.authorUrl")}</label>
               <div className='form-group clearfix'>
                 <input
                   type='text'

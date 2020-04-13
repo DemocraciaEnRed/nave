@@ -16,7 +16,7 @@ main.container
                 span.mobile /
               input(type='text', name='name', validate='required forum', autofocus, id='hostname', autocorrect='off', autocapitalize='off')
               span.error.name-unavailable.hide=t('forum.form.url.unavailable')
-          
+
           fieldset
             label= t('forum.form.title.label')
             .form-group.clearfix.title
@@ -26,14 +26,14 @@ main.container
             label= t('forum.form.summary.label')
             .form-group.clearfix.summary
               input(type='text', name='summary', placeholder= t('forum.form.summary.placeholder'), maxlength=300, validate='max-length:300')
-              
+
           fieldset
             label= t('forum.form.contentType.label')
-            .form-group.clearfix.contentType            
+            .form-group.clearfix.contentType
               select.input-group(name='contentType', value='ejes', validate='required')
-                option(value='ejes')= 'Ejes de consulta'
-                option(value='propuestas')= 'Propuestas'
-                option(value='llamado')= t('forum.form.contentType.llamado')
+                option(value='ejes')= t('forum.form.contentType.option.ejes')
+                option(value='propuestas')= t('forum.form.contentType.option.propuestas')
+                option(value='llamado')= t('forum.form.contentType.option.convocatoria')
 
           fieldset.sugerencia
             label= t('forum.form.sugerencia.label')
@@ -51,7 +51,7 @@ main.container
               input(type='text', name='cover', placeholder= t('admin-topics-form.placeholder.cover'), validate='url')
 
           fieldset
-            label= 'Fecha de cierre'
+            label= t('admin-topics-form.label.closingAt')
             .form-group.clearfix.summary
               input(type='date', name='closingAt', maxlength=12, validate='max-length:12')
 
