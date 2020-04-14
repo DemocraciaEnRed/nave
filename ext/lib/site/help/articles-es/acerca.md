@@ -6,9 +6,9 @@ La plataforma **Nuestra América Verde** es un espacio digital de diálogo y par
 
 **Correo electrónico:** [contato@nuestraamericaverde.org](mailto:contato@nuestraamericaverde.org)
 
-**Twitter:** (@n_americaverde)[https://twitter.com/n_americaverde]
+**Twitter:** [@n_americaverde](https://twitter.com/n_americaverde)
 
-**Instagram:** (@n_americaverde)[https://www.instagram.com/n_americaverde/]
+**Instagram:** [@n_americaverde](https://www.instagram.com/n_americaverde/)
 ​
 ## Tecnología
 
