@@ -1,18 +1,21 @@
 @import 'ext/node_modules/argob-poncho/dist/css/poncho.css'
 
 // colores principales de textos y otras cositas
-$main-color = #A695d6
-$main-color-resalted = #7868a6
+$main-color = #92c264
+$main-color-resalted = #77935a
 // colores de links o textos tipo links
-$main-link-color = #1fac92
-$main-link-color-hover = #257b6c
+$main-link-color = #847163
+$main-link-color-hover = #dbbcd5
 // otros colores de bootstrap
-$primary-color = #A69546
-$primary-color-hover = #e3cc5f
+$primary-color = #92c264
+$primary-color-hover = #77935a
 $success-color = #50d021
 $success-color-hover = #65e635
 $danger-color = #e16a3c
 $danger-color-hover = #ff9371
+
+$secondary-color = #847163
+$secondary-color-hover = #dbbcd5
 
 // Stylus mixins (funciones): http://stylus-lang.com/docs/mixins.html
 // Para convertir fonts entre un formato y otro: https://onlinefontconverter.com/
@@ -25,37 +28,43 @@ include-font-files(path)
 
 a
   color: $main-link-color
-  
+
 a:hover, a:focus, a:active
   color: $main-link-color-hover
 
 .text-primary
   //en poncho le ponen !important así que hay que hacer lo mismo para pisarlo
   color: $primary-color !important
-  
+
 .bg-primary
   //en poncho le ponen !important así que hay que hacer lo mismo para pisarlo
   background-color: $primary-color !important
-  
+
 // estos botones son los de fondo gris y texto de color
 .btn-link
-  color: $main-color
-  
+  color: white
+  background-color: $secondary-color !important
+  text-transform: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 38px;
+
 .btn-link:hover,
 .btn-link:focus
-  color: $main-color-resalted
-  
+  color: white
+  background-color: $secondary-color-hover !important
+
 // botones principales
 .btn-primary
   background-color: $primary-color
-  
+
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.focus,
 .btn-primary.active
   background-color: $primary-color-hover
-  
+
 // on click
 .btn-primary.active.focus,
 .btn-primary.active:focus,
@@ -64,18 +73,18 @@ a:hover, a:focus, a:active
 .btn-primary:active:focus,
 .btn-primary:active:hover
   background-color: $primary-color-hover
-  
+
 // botones de "borrar", "revocar", etc.
 .btn-danger
   background-color: $danger-color
-  
+
 .btn-danger:hover,
 .btn-danger:focus,
 .btn-danger:active,
 .btn-danger.focus,
 .btn-danger.active
   background-color: $danger-color-hover
-  
+
 // on click
 .btn-danger.active.focus,
 .btn-danger.active:focus,
@@ -84,18 +93,18 @@ a:hover, a:focus, a:active
 .btn-danger:active:focus,
 .btn-danger:active:hover
   background-color: $danger-color-hover
-  
+
 //botones "guardar", "publicar", etc.
 .btn-success
   background-color: $success-color
-  
+
 .btn-success:hover,
 .btn-success:focus,
 .btn-success:active,
 .btn-success.focus,
 .btn-success.active
   background-color: $success-color-hover
-  
+
 // on click
 .btn-success.active.focus,
 .btn-success.active:focus,
@@ -110,5 +119,3 @@ a:hover, a:focus, a:active
 
 .btn-outline-success:hover
   background-color: $success-color
-
-  
