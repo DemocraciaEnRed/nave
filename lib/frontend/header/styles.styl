@@ -80,6 +80,8 @@
       margin: 0px 2px;
 
     .header-link
+      height: 43px;
+      margin-top: 15px;
       padding: 0 5px;
       &:hover
         cursor: pointer;
@@ -129,6 +131,10 @@
     color: #fff
     background-color: $primary-color
 
+  .org-link a, a.anon-user
+    display: flex;
+    align-items: center;
+
   .header-link
     padding-left: 15px
     padding-right: 15px
@@ -136,13 +142,12 @@
     color: $primary-color
     font-weight: 500
     font-size: 15px
-    height: 43px;
     line-height: header-height
-    margin-top: 15px;
     line-height: 43px;
     &.anon-user
       background-color: $primary-color
       color: #fff
+
 
   .logo
     margin: 12px 0 0 0
