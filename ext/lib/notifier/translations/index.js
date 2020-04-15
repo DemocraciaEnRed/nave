@@ -14,11 +14,11 @@ overrides = {
   'templates.email.greeting': 'Hola {userName},',
   'templates.email.signature': `${t["common.app-name"]} - ${t["homepage.presentation.slogan"]}`,
 
-  'templates.welcome-email.subject': 'Bienvenido a ' + config.organizationName,
-  'templates.welcome-email.body': `Iniciaste el proceso de registro para participar en <a href="${homeUrl}">${config.organizationName}</a>.<br><br>Para finalizarlo, hacé click <a href=\"{validateUrl}\">click aquí.</a>`,
+  'templates.welcome-email.subject': 'Bienvenido a ' + t["common.app-name"],
+  'templates.welcome-email.body': `Iniciaste el proceso de registro para participar en <a href="${homeUrl}">${t["common.app-name"]}</a>.<br><br>Para finalizarlo, hacé click <a href=\"{validateUrl}\">click aquí.</a>`,
   'templates.welcome-email.ps': 'En caso de no haberte registrado, por favor ignorá este correo.  ',
 
-  'templates.comment-reply.subject': `¡Contestaron tu comentario en ${config.organizationName}!`,
+  'templates.comment-reply.subject': `¡Contestaron tu comentario en ${t["common.app-name"]}!`,
   'templates.comment-reply.body': 'Tienes una nueva respuesta a tu comentario.',
   'templates.comment-reply.body2': 'Por favor <a href=\"{url}\">cliquea aquí</a> para verla.',
 

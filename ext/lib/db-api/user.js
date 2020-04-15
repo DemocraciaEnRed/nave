@@ -6,6 +6,7 @@ const pluck = utils.pluck
 const expose = utils.expose
 const config = require('lib/config')
 const urlBuilder = require('lib/backend/url-builder')
+const translations = require('lib/backend/translations')
 
 const log = debug('democracyos:db-api:user')
 
@@ -230,9 +231,9 @@ exports.expose.ordinary.keys = [
 
 ////// HASTA ACÁ ERA EL ORIGINAL
 
-exports.requestVerify = function requestVerify (id, fn) {
+exports.requestVerify = function requestVerify (id, locale, fn) {
   log('Requesting verify for User %s', id)
-  
+
   if (!config.verifyUserRequestEmail){
     log('Must provide environment variable verifyUserRequestEmail to send this mail')
     fn({status:500, error:'Bad server configuration. Check error logs.'})
@@ -242,9 +243,9 @@ exports.requestVerify = function requestVerify (id, fn) {
     const {protocol, host} = config
     const verifyConfigUrl = `${protocol}://${host}${urlBuilder.for('settings.user-badges')}`
 
-    let mailSubject = `${config.organizationName} - Solicitud de verificación de cuenta`
+    let mailSubject = `${translations[locale]["common.app-name"]} - Solicitud de verificación de cuenta`
     let mailBodyHtml = `
-      <p>El usuario <strong>${user.displayName}</strong> solicitó la verificación de su cuenta en la plataforma ${config.organizationName}.</p>
+      <p>El usuario <strong>${user.displayName}</strong> solicitó la verificación de su cuenta en la plataforma ${translations[locale]["common.app-name"]}.</p>
       <p>Podés contactarlo a su correo electrónico <a href="mailto:${user.email}">${user.email}</a> para solicitar información.</p>
       <p>Para verificar su cuenta entrá a la sección de <a href="${verifyConfigUrl}">Gestión de usuarios</a> de la plataforma, buscá el usuario y clickeá en <em>Verificar Usuario.</em></p>
     `
@@ -267,7 +268,7 @@ exports.requestVerify = function requestVerify (id, fn) {
   return this
 }
 
-exports.verifyUser = function verifyUser (id) {
+exports.verifyUser = function verifyUser (id, locale) {
   log('Verifying User with id %s', id)
 
   return new Promise((resolve, reject) => {
@@ -281,10 +282,10 @@ exports.verifyUser = function verifyUser (id) {
         const {protocol, host} = config
         const homeUrl = `${protocol}://${host}`
 
-        let mailSubject = `${config.organizationName} - Cuenta verificada`
+        let mailSubject = `${translations[locale]["common.app-name"]} - Cuenta verificada`
         let mailBodyHtml = `
           <p>¡Su cuenta ha sido verificada con éxito!</p>
-          <p>Puede volver a ${config.organizationName} haciendo click <a href="${homeUrl}">acá</a></p>
+          <p>Puede volver a ${translations[locale]["common.app-name"]} haciendo click <a href="${homeUrl}">acá</a></p>
         `
 
         // NOTA: el mailer puede enviar "bien" el mail pero el smtp server no, entonces nunca sale el mail y no nos enteramos

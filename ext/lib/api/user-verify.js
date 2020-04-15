@@ -22,13 +22,13 @@ middlewares.users.restrict,
 function requestUserVerify(req, res, next) {
   let verifyId = req.params.id
   let fromId = req.user._id
-  
+
   if (fromId != verifyId)
     next(new Error('Can\'t request user verify for another user'))
-  
+
   log('Sending user verify request for id %s', verifyId)
-  
-  dbApi.user.requestVerify(verifyId, function (err, user) {
+
+  dbApi.user.requestVerify(verifyId, req.locale, function (err, user) {
     if(err)
       next(err)
     log('User verify request sent successfully for id %s', user.id)
@@ -47,12 +47,12 @@ app.post('/verify/:id',
 middlewares.users.restrict,
 function requestUserVerify(req, res, next) {
   if (!req.user.staff) return res.send(401)
-  
+
   let verifyId = req.params.id
-  
+
   log('Verifying user with id %s', verifyId)
-  
-  dbApi.user.verifyUser(verifyId)
+
+  dbApi.user.verifyUser(verifyId, req.locale)
     .then(() => {
       res.status(200).json({status: 200})
     })
