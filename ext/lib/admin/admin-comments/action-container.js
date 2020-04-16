@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
+import t from 't-component'
 
 import Vote from './actions/vote'
 import Poll from './actions/poll'
@@ -53,8 +54,8 @@ export default class ActionContainer extends Component {
         <div>
           {
             shrinked ?
-              <h5 className="toggle-title text-primary" onClick={this.toggleShrink}>▼ Mostrar los resultados ▼</h5>
-              : <h5 className="toggle-title text-primary" onClick={this.toggleShrink}>▲ Ocultar los resultados ▲</h5>
+              <h5 className="toggle-title text-primary" onClick={this.toggleShrink}>▼ {t("admin-stats.actions.show")} ▼</h5>
+              : <h5 className="toggle-title text-primary" onClick={this.toggleShrink}>▲ {t("admin-stats.actions.hide")} ▲</h5>
           }
         </div>
       </div>

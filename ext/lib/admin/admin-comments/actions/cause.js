@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
+import t from 't-component'
 
 export default class Cause extends Component {
   constructor(props) {
@@ -12,7 +13,7 @@ export default class Cause extends Component {
     let { topic } = this.props
     return (
         <div className="alert alert-warning text-center">
-          <b>{topic.action.count}</b> participantes brindaron su apoyo ♥
+          <b>{topic.action.count}</b> {t("admin-stats.actions.cause.participants")}
         </div>
     )
   }

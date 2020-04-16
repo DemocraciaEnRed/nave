@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
+import t from 't-component'
 
 export default class Vote extends Component {
   constructor(props) {
     super(props)
     this.state = {
       options: {
-        'positive' : 'Votos a favor',
-        'neutral' : 'Votos en abstención',
-        'negative' : 'Votos en contra',
+        'positive' : t("admin-stats.actions.vote.positive"),
+        'neutral' : t("admin-stats.actions.vote.neutral"),
+        'negative' : t("admin-stats.actions.vote.negative"),
 
       }
     }
@@ -20,23 +21,24 @@ export default class Vote extends Component {
     let { options } = this.state
     return (
       <div className="general-stats-container">
-         <div className="alert alert-warning text-center">
-          Han participado <b>{topic.action.count}</b> usuarios
-        </div>
+         <div
+          className="alert alert-warning text-center"
+          dangerouslySetInnerHTML={{__html: t("admin-stats.actions.generic.participants", {count: topic.action.count})}}>
+         </div>
           <table className="table table-condensed">
             <thead>
                  <tr>
-              <th colSpan="3" className="bg-primary">Tipo de acción: Voto</th>
+              <th colSpan="3" className="bg-primary">{t("admin-stats.actions.generic.action-type")} {t("admin-topics-form.action.vote")}</th>
             </tr>
             <tr>
-              <th className="bg-light">Opción</th>
+              <th className="bg-light">{t("admin-stats.actions.generic.option")}</th>
               <th className="bg-light text-center">Votos</th>
               <th className="bg-light text-center">Porc.</th>
             </tr>
             </thead>
             <tbody>
               {
-              topic.action.results.map((option, i) => 
+              topic.action.results.map((option, i) =>
                 <tr>
                   <td>
                     {options[option.value]}

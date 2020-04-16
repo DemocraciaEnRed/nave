@@ -1,20 +1,20 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
+import t from 't-component'
 
 export default class Slider extends Component {
   constructor(props) {
     super(props)
     this.state = {
       options: [
-        'Totalmente en contra',
-        'Muy en contra',
-        'En contra',
-        'Un poco en contra',
-        'A favor',
-        'Un poco a favor',
-        'A favor',
-        'Muy a favor',
-        'Totalmente a favor',
+        t("proposal-result.very-against"),
+        t("proposal-result.middle-high-against"),
+        t("proposal-result.middle-against"),
+        t("proposal-result.little-against"),
+        t("proposal-result.middle-support"),
+        t("proposal-result.little-support"),
+        t("proposal-result.middle-high-support"),
+        t("proposal-result.very-support")
       ]
     }
   }
@@ -24,23 +24,24 @@ export default class Slider extends Component {
     let { options } = this.state
     return (
       <div className="general-stats-container">
-        <div className="alert alert-warning text-center">
-          Han participado <b>{topic.action.count}</b> usuarios
+        <div
+          className="alert alert-warning text-center"
+          dangerouslySetInnerHTML={{ __html: t("admin-stats.actions.generic.participants", {count: topic.action.count}) }}>
         </div>
         <table className="table table-condensed">
           <thead>
             <tr>
-              <th colSpan="3" className="bg-primary">Tipo de accion: Rango</th>
+              <th colSpan="3" className="bg-primary">{t("admin-stats.actions.generic.action-type")} {t("admin-topics-form.action.slider")}</th>
             </tr>
             <tr>
-              <th className="bg-light">Opción</th>
+              <th className="bg-light">{t("admin-stats.actions.generic.option")}</th>
               <th className="bg-light text-center">Votos</th>
               <th className="bg-light text-center">Porc.</th>
             </tr>
           </thead>
           <tbody>
             {
-              options.map( (option, i) => 
+              options.map( (option, i) =>
             <tr>
               <td>
                 {option}
