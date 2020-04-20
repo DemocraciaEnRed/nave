@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Flickity from 'flickity'
 import topicStore from 'lib/frontend/stores/topic-store/topic-store'
 import TopicCard from './topic-card/component'
+import t from 't-component'
 
 export default class Carrusel extends Component {
   constructor (props) {
@@ -22,19 +23,19 @@ export default class Carrusel extends Component {
         if (topics.length > 0) {
           // ordenamos topics por abiertos y cerrados, y por fechas de cierre
           // mismo sort utilizado en home-forum
-          topics = topics.sort((a,b) => {  
+          topics = topics.sort((a,b) => {
             // si uno está abierto y el otro cerrado, ordenar por abierto
             if (a.closed && !b.closed)
               return 1
             if (!a.closed && b.closed)
-              return -1  
+              return -1
             //// si los dos están abiertos o los dos cerrados
             // si los dos tienen fecha de cierre, ordenar por eso
             if (a.closingAt && b.closingAt)
               if (a.closed && b.closed)
-                return new Date(a.closingAt) < new Date(b.closingAt) ? 1 : -1     
+                return new Date(a.closingAt) < new Date(b.closingAt) ? 1 : -1
               if (!a.closed && !b.closed)
-                return new Date(a.closingAt) > new Date(b.closingAt) ? 1 : -1    
+                return new Date(a.closingAt) > new Date(b.closingAt) ? 1 : -1
             // si alguno tiene fecha de cierre, poner último
             if (a.closingAt)
               return 1
@@ -73,7 +74,7 @@ export default class Carrusel extends Component {
     return (
       <div className="fondo-titulo">
         {this.props.topic &&
-          <h2 className='title'>Podés seguir participando</h2>
+          <h2 className='title'>{t("homepage.forums-participate")}</h2>
         }
         <div className='topics-container' ref='carrusel'>
           {this.state.topics && this.state.topics.map((topic) => (
