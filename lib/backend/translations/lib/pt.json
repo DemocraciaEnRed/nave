@@ -225,6 +225,8 @@
   "comments.arguments.reply": "Responder a este argumento",
   "comments.cannot-be-empty": "O argumento não pode estar vazio",
   "comments.cannot-remove": "Este comentário tem respostas, não pode ser removido!",
+  "comments.closed.title": "A consulta pública terminou.",
+  "comments.closed.message": "Convidamos você a conhecer outras dúvidas e participar.",
   "comments.create.placeholder": "Escreva um comentário...",
   "comments.create.verify": "Verificar conta",
   "comments.create.publish": "Publicar",

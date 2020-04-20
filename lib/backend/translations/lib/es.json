@@ -246,6 +246,8 @@
   "comments.arguments.reply": "Responder a este argumento",
   "comments.cannot-be-empty": "El argumento no puede estar vacío",
   "comments.cannot-remove": "¡El argumento tiene respuestas, no puede ser borrado!",
+  "comments.closed.title": "La Consulta Pública ha finalizado.",
+  "comments.closed.message": "Te invitamos a conocer otras consultas y participar.",
   "comments.create.placeholder": "Escribir un argumento...",
   "comments.create.publish": "Publicar",
   "comments.deleted-arguments": "Argumentos eliminados",
