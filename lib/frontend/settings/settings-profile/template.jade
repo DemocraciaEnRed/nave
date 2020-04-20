@@ -27,6 +27,6 @@
             a(href='https://gravatar.com', target='_blank')
               = t('settings.change-at-gravatar') + ' '
               i.icon-share-alt
-            input.form-control(type='text', name='profilePictureUrl', maxlength=200, placeholder=t('settings.paste-url-image'), value=user.profilePictureUrl, validate='url')
+            input.form-control(type='text', name='profilePictureUrl', maxlength=401, placeholder=t('settings.paste-url-image'), value=user.profilePictureUrl, validate='url max-length:400')
       .form-group: button.btn.btn-success.btn-block.btn-lg
         =t('settings.save')
