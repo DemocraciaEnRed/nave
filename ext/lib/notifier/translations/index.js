@@ -30,6 +30,7 @@ Object.assign(tNotifier.es, overrides)
 
 t = ts.pt
 overrides = {
+  'templates.welcome-email.subject': `Bem-vindo(a) a ${t["common.app-name"]}!`,
   'templates.email.signature': `${t["common.app-name"]} - ${t["homepage.presentation.slogan"]}`,
 }
 Object.assign(tNotifier.pt, overrides)
