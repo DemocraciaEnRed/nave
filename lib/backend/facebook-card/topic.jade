@@ -1,5 +1,5 @@
-- var title = translations["share.siteName"]
-- if (topic.mediaTitle) title = `${topic.mediaTitle} | ${translations["share.siteName"]}`
+- var title = translations["share.siteName-both"]
+- if (topic.mediaTitle) title = `${topic.mediaTitle} | ${translations["share.siteName-both"]}`
 - var image = topic.coverUrl ? topic.coverUrl : config.socialshare.image
 
 html
@@ -8,5 +8,5 @@ html
     meta(property='og:type', content='website')
     meta(property='og:url', content=url)
     meta(property='og:image', content=image)
-    meta(property='og:site_name', content=translations["share.siteName"])
-    meta(property='og:description', content=translations["share.siteDescription"])
+    meta(property='og:site_name', content=translations["share.siteName-both"])
+    meta(property='og:description', content=translations["share.siteDescription-both"])
