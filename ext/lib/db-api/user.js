@@ -245,9 +245,13 @@ exports.requestVerify = function requestVerify (id, locale, fn) {
 
     let mailSubject = `${translations[locale]["common.app-name"]} - Solicitud de verificación de cuenta`
     let mailBodyHtml = `
-      <p>El usuario <strong>${user.displayName}</strong> solicitó la verificación de su cuenta en la plataforma ${translations[locale]["common.app-name"]}.</p>
+      <p>El usuario <strong>${user.displayName}</strong> solicitó la verificación de su cuenta en la plataforma ${translations['es']["common.app-name"]}.</p>
       <p>Podés contactarlo a su correo electrónico <a href="mailto:${user.email}">${user.email}</a> para solicitar información.</p>
       <p>Para verificar su cuenta entrá a la sección de <a href="${verifyConfigUrl}">Gestión de usuarios</a> de la plataforma, buscá el usuario y clickeá en <em>Verificar Usuario.</em></p>
+      <br />
+      <p>O usuário <strong>${user.displayName}</strong> solicitou a verificação de conta na plataforma ${translations['pt']["common.app-name"]}.</p>
+      <p>Você pode contatá-lo pelo e-mail <a href="mailto:${user.email}">${user.email}</a> para solicitar informações.</p>
+      <p>Para verificar sua conta, vá até a seção <a href="${verifyConfigUrl}">Gestão de usuários</a> da plataforma, procure o usuário e clique em.</em></p>
     `
     // NOTA: el mailer puede enviar "bien" el mail pero el smtp server no, entonces nunca sale el mail y no nos enteramos
     // Eso solo se puede ver en los logs de smtp server
@@ -282,10 +286,10 @@ exports.verifyUser = function verifyUser (id, locale) {
         const {protocol, host} = config
         const homeUrl = `${protocol}://${host}`
 
-        let mailSubject = `${translations[locale]["common.app-name"]} - Cuenta verificada`
+        let mailSubject = `${translations[locale]["common.app-name"]} - ${translations[locale]["user-verify.verified-account"]}`
         let mailBodyHtml = `
-          <p>¡Su cuenta ha sido verificada con éxito!</p>
-          <p>Puede volver a ${translations[locale]["common.app-name"]} haciendo click <a href="${homeUrl}">acá</a></p>
+          <p>${translations[locale]["user-verify.verification-success"]}</p>
+          <p>${translations[locale]["user-verify.verification-return"].replace('{appName}', translations[locale]["common.app-name"]).replace('{homeUrl}', homeUrl)}</p>
         `
 
         // NOTA: el mailer puede enviar "bien" el mail pero el smtp server no, entonces nunca sale el mail y no nos enteramos

@@ -294,7 +294,7 @@
   "forum.form.contentType.option.ejes": "Eixos de consulta",
   "forum.form.contentType.option.propuestas": "Propostas",
   "forum.form.contentType.option.convocatoria": "Chamada",
-  "forum.form.cover": "Imagem da capa",
+  "forum.form.cover": "Imagem de capa",
   "forum.form.create.submit": "Criar",
   "forum.form.edit.title": "Editar minha Consulta",
   "forum.form.edit.submit": "Editar",
@@ -344,7 +344,7 @@
   "help.contact.title": "Contato",
   "help.about.title": "Sobre este site",
   "help.how-it-works.title": "Como funciona?",
-  "help.stats.title": "Estatisticas",
+  "help.stats.title": "Estatísticas",
   "help.stats.forums": "Total de consultas",
   "help.stats.topics": "Eixos totais",
   "help.stats.comments.total": "Total de comentários",
@@ -367,7 +367,7 @@
   "homepage.search.filter.forums": "Apenas consultas",
   "homepage.search.filter.all-authors": "Todos os autores",
   "homepage.search.no-results": "Não há resultados",
-  "homepage.search.filter.no-results": "Não foram encontrados resultados",
+  "homepage.search.filter.no-results": "Não foram encontrados resultados para a sua busca",
   "homepage.search.results.title": "Resultados da pesquisa",
   "homepage.search.results.subtitle": "Encontramos {count} resultados para a sua pesquisa \"{term}\"",
   "homepage.search.results.published-at": "Publicado:",
@@ -565,7 +565,7 @@
   "signup.user-already-validated": "Esse cidadão já validado o endereço de email",
   "signup.validation-email-resent": "E-mail de validação enviado novamente.",
   "signup.welcome": "Seja bem vindo(a), {name}!",
-  "signup.welcome-can-vote": "BEM-VINDO, {name}!",
+  "signup.welcome-can-vote": "Bem-vindx, {name}!",
   "signup.whitelist.email": "Email {email} não é permitido pelo administrador",
   "signup.with-email": "Cadastro com endereço de e-mail",
   "signup.your-firstname": "Seu nome",
@@ -607,5 +607,10 @@
   "validators.min-length.singular": "Deve ser pelo menos 1 caractere",
   "validators.not.match": "Não coincidem",
   "validators.password.not.match": "As senhas não coincidem",
-  "validators.required": "Requerido"
+  "validators.required": "Requerido",
+
+  "user-verify.request-ok": "Perfeito, enviaremos um e-mail de verificação para o seu email!",
+  "user-verify.verified-account": "Conta verificada",
+  "user-verify.verification-success": "Sua conta foi confirmada com sucesso!",
+  "user-verify.verification-return": "Você pode voltar para {appName} clicando <a href=\"{homeUrl}\">aqui</a>"
 }

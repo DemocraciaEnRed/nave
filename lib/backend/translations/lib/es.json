@@ -605,7 +605,7 @@
   "signup.validating": "Validando la cuenta.",
   "signup.validation-email-resent": "El correo electrónico de validación ha sido reenviado.",
   "signup.welcome": "¡Falta muy poco, {name}!",
-  "signup.welcome-can-vote": "¡Bienvenido, {name}!",
+  "signup.welcome-can-vote": "¡Bienvenidx, {name}!",
   "signup.whitelist.email": "Este correo electrónico {email} no está permitido por el administrador",
   "signup.with-email": "Registro con correo electrónico",
   "signup.your-firstname": "Tu nombre",
@@ -650,5 +650,10 @@
   "validators.min-length.singular": "Debe tener al menos 1 caracter",
   "validators.not.match": "No coinciden",
   "validators.password.not.match": "Las contraseñas no coinciden",
-  "validators.required": "Requerido"
+  "validators.required": "Requerido",
+
+  "user-verify.request-ok": "¡Perfecto, te estaremos enviando un mail de verificación a tu casilla de correo!",
+  "user-verify.verified-account": "Cuenta verificada",
+  "user-verify.verification-success": "¡Su cuenta ha sido verificada con éxito!",
+  "user-verify.verification-return": "Puede volver a {appName} haciendo click <a href=\"{homeUrl}\">acá</a>"
 }
