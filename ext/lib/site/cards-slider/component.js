@@ -59,12 +59,15 @@ export default class Carrusel extends Component {
   componentDidUpdate () {
     if (this.flkty) this.flkty.destroy()
     const options = {
-      cellAlign: 'left',
+      cellAlign: 'center',
       draggable: false,
       // friction: 0.2,
-      contain: true,
+      contain: false,
+      // que vuelva a empezar al final
+      wrapAround: false,
+      // los puntitos de abajo que marcan la página
       pageDots: false,
-      groupCells: window.matchMedia('(min-width: 1024px)').matches ? 3 : 1
+      groupCells: window.matchMedia('(min-width: 1024px)').matches ? 2 : 1
     }
     this.flkty = new Flickity(this.refs.carrusel, options)
   }
