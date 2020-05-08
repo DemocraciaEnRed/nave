@@ -28,4 +28,4 @@ ssl
 package-lock.json
 
 #script personal (wencha)
-run.sh
+run*.sh
