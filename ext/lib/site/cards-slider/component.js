@@ -21,7 +21,10 @@ export default class Carrusel extends Component {
           topics = [...topics].filter((topic) => topic.id !== this.props.topic.id)
         }
         if (topics.length > 0) {
-          // ordenamos topics por abiertos y cerrados, y por fechas de cierre
+          topics = topics.sort((t1, t2) => t1.createdAt > t2.createdAt)
+
+          // código de sort original
+          /*// ordenamos topics por abiertos y cerrados, y por fechas de cierre
           // mismo sort utilizado en home-forum
           topics = topics.sort((a,b) => {
             // si uno está abierto y el otro cerrado, ordenar por abierto
@@ -43,7 +46,8 @@ export default class Carrusel extends Component {
               return -1
             // finalmente, si nada de lo anterior se cumple, ordenar por fecha de publicación
             return new Date(a.publishedAt) < new Date(b.publishedAt) ? 1 : -1
-          })
+          })*/
+
           this.setState({
             topics: topics
           })
