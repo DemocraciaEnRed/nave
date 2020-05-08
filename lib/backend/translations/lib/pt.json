@@ -214,7 +214,7 @@
 
   "comment-card.flagged-as-spam": "Este argumento foi marcado como spam.",
   "comment-card.not-spam": "Não é spam",
-  "comment-card.remove-argument": "Remover argumento",
+  "comment-card.remove-argument": "Apagar comentario",
   "comment-card.report-spam": "Marcar como spam",
   "comment-card.show": "Mostrar.",
   "comment-vote.downvote": "Não contribuir com o debate",
@@ -231,7 +231,7 @@
   "comments.create.verify": "Verificar conta",
   "comments.create.publish": "Publicar",
   "comments.deleted-arguments": "Argumentos apagados",
-  "comments.edit.argument": "Editar argumento",
+  "comments.edit.argument": "Editar comentario",
   "comments.edited": "editado",
   "comments.load-more": "Carregar mais argumentos",
   "comments.my.arguments": "Qual é seu argumento??",
