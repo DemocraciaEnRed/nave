@@ -21,6 +21,7 @@ export default class Carrusel extends Component {
           topics = [...topics].filter((topic) => topic.id !== this.props.topic.id)
         }
         if (topics.length > 0) {
+          // Cuidado!! este sorting parece que en chrome no anda
           topics = topics.sort((t1, t2) => t1.createdAt > t2.createdAt)
 
           // código de sort original
