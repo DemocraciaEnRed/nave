@@ -395,8 +395,8 @@
   "homepage.forums.subtitle-llamado": "Las propuestas que comprenden esta convocatoria son:",
   "homepage.forums.subtitle-propuestas": "Las propuestas que comprenden esta consulta son:",
   "homepage.forums.subtitle-ejes": "Los ejes que comprenden esta consulta son:",
-  "homepage.presentation.slogan": "Un llamado urgente para enfrentar la emergencia climática e invertir en un futuro sostenible para todas y todos.",
-  "homepage.presentation.site-description": "presenta un Plan de Cooperación Latinoamericana con 14 medidas concretas de transformación productiva, económica y social para la década 2020-2030. Estructuradas a partir de tres grandes principios rectores, las propuestas buscan reducir drásticamente la emisión de gases de efecto invernadero, enfrentar la emergencia climática y vencer la pobreza, la precariedad y la desigualdad.",
+  "homepage.presentation.slogan": "Un llamado urgente para construir una salida verde a la crisis sanitaria, económica y climática e invertir en un futuro sustentable para todos y todas.",
+  "homepage.presentation.site-description": "¿Cómo podemos responder a la emergencia climática cuando nos encontramos ante una crisis devastadora en la economía y en la salud?<br /><br /><span class='skyblue'>{platform}</span> es una apuesta radical por la recuperación verde de América Latina. Un movimiento de la sociedad civil que se une al Green New Deal Global y convoca a nuestros Gobiernos a comprometerse con un futuro justo y sostenible para las próximas generaciones.<br /><br />Para eso, presenta un <strong>Plan de Recuperación Económica con Justicia Social y Ambiental</strong> para la década 2020-2030. Estructurado a partir de tres grandes principios rectores - <strong>realismo científico, cooperación latinoamericana y justicia social</strong> —, propone 14 medidas concretas de mitigación, adaptación y financiamiento frente a los impactos del cambio climático y del apoyo inmediato a las familias pobres y trabajadoras, la población más afectada por la crisis social, económica y sanitaria generada por la pandemia de covid-19.",
   "homepage.presentation.steps-instructions": "Invitamos a todas y todos a colaborar en el proceso participativo del plan 2020-2030 y ayudar a construir una América Latina con justicia social, económica y ambiental. ",
   "homepage.presentation.step1.title": "Conozca las propuestas",
   "homepage.presentation.step1.text": "Acceder al Plan de Cooperación 2020-2030 completo.",
@@ -561,9 +561,9 @@
   "settings.user-badges": "Etiquetas de usuarios",
 
   "share.siteName": "Colabore en la construcción del Plan de Cooperación 2020-2030!",
-  "share.siteDescription": "Un llamado urgente para enfrentar la emergencia climática e invertir en un futuro sostenible para todas y todos.",
+  "share.siteDescription": "Un llamado urgente para construir una salida verde a la crisis sanitaria, económica y climática e invertir en un futuro sustentable para todos y todas.",
   "share.siteName-both": "Colabore en la construcción del Plan de Cooperación 2020-2030! | Colabore na construção do Plano de Cooperação 2020-2030!",
-  "share.siteDescription-both": "Un llamado urgente para enfrentar la emergencia climática e invertir en un futuro sostenible para todas y todos. | Um chamado urgente para enfrentar a emergência climática e investir em um futuro sustentável para todas e todos.",
+  "share.siteDescription-both": "Un llamado urgente para construir una salida verde a la crisis sanitaria, económica y climática e invertir en un futuro sustentable para todos y todas. | Um chamado urgente para construirmos uma saída verde frente a crise econômica, sanitária e climática, e investirmos em um futuro sustentável para todas e todos!",
 
   "sidebar.closed": "Cerrados",
   "sidebar.hide-voted": "Ocultar votados por mí",
