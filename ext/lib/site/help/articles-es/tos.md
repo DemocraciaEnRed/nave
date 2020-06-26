@@ -58,7 +58,7 @@ Las siguientes actividades, ya sean lícitas o ilícitas, están expresamente pr
 - Usar la Plataforma para fines no autorizados expresamente en estos Términos y Condiciones.
 - Copiar o adaptar los códigos fuente y objeto del software de la Plataforma, hacer ingeniería inversa, descompilación, modificación en los códigos fuente y objeto del software de la Plataforma, o intentar hacerlo, o, de cualquier forma, violar los derechos de propiedad intelectual del Administrador, según corresponda.
 
-Si el Usuario se encuentra ante alguna de estas situaciones, debe entrar en contacto con el administrador a través del correo electrónico contato@nuestraamericaverde.org. 
+Si el Usuario se encuentra ante alguna de estas situaciones, debe entrar en contacto con el administrador a través del correo electrónico contacto@nuestraamericaverde.org. 
 
 ### Responsabilidades
 

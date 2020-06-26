@@ -57,7 +57,7 @@ As seguintes atividades, sejam lícitas ou ilícitas, são expressamente proibid
 - Utilizar a Plataforma para finalidades não expressamente autorizadas nestes Termos e Condições;
 - Copiar ou adaptar os códigos-fonte e objeto do software da Plataforma, fazer engenharia reversa, decompilação, modificação nos códigos-fonte e objeto do software da Plataforma, ou tentar fazê-lo, ou, de qualquer outra forma, violar os direitos de propriedade intelectual do Administrador, conforme aplicável.
 
-Se o Usuário se deparar com alguma dessas situações, deverá entrar em contato com o Administrador por meio do email: [contato@nuestraamericaverde.org](contato@nuestraamericaverde.org)
+Se o Usuário se deparar com alguma dessas situações, deverá entrar em contato com o Administrador por meio do email: [contato@nossaamericaverde.org](contato@nossaamericaverde.org)
 
 ### Responsabilidades
 
@@ -94,4 +94,4 @@ Todos os itens destes Termos e Condições são regidos pelas leis vigentes na R
 
 O Administrador poderá alterar, a qualquer tempo, estes Termos e Condições. Caso as alterações sejam relevantes, informaremos oportunamente sobre alterações realizadas.
 
-Quaisquer dúvidas, críticas, sugestões e/ou reclamações poderão ser feitas pelo email: [contato@nuestraamericaverde.org](contato@nuestraamericaverde.org) ou [contacto@nuestraamericaverde.org](contacto@nuestraamericaverde.org)
+Quaisquer dúvidas, críticas, sugestões e/ou reclamações poderão ser feitas pelo email: [contato@nossaamericaverde.org](contato@nossaamericaverde.org) ou [contacto@nuestraamericaverde.org](contacto@nuestraamericaverde.org)

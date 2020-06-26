@@ -46,7 +46,7 @@ Você terá determinados direitos em relação aos seus dados pessoais. Tais dir
 - Solicitar a portabilidade de seus dados pessoais;
 - Revogar o consentimento a qualquer momento, quando o Administrador tratar seus dados pessoais com base no consentimento.
 
-Você poderá exercer tais direitos pelo email: [contato@nuestraamericaverde.org](contato@nuestraamericaverde.org)
+Você poderá exercer tais direitos pelo email: [contato@nossaamericaverde.org](contato@nossaamericaverde.org)
 
 ### INTERAÇÕES COM SITES DE TERCEIROS
 Podemos disponibilizar links para outros sites na Internet. O ADMINISTRADOR NÃO SE RESPONSABILIZA POR ESTES WEBSITES E CONTEÚDOS E, AINDA, NÃO COMPARTILHA, SUBSCREVE, MONITORA, VALIDA OU ACEITA A FORMA COMO ESSES WEBSITES OU FERRAMENTAS DE ARMAZENAMENTO DE CONTEÚDO COLETAM, PROCESSAM E TRANSFEREM SUAS INFORMAÇÕES PESSOAIS. Recomendamos que você consulte as respectivas políticas de privacidade de tais websites para se informar adequadamente a respeito do uso de suas informações pessoais por outros websites ou outras ferramentas.

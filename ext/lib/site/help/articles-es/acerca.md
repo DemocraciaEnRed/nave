@@ -1,10 +1,12 @@
 # Acerca de este sitio
 
-La plataforma **Nuestra América Verde** es un espacio digital de diálogo y participación que permite a todas y todos colaborar en la construcción del Plan de Cooperación 2020-2030: un documento que presenta medidas concretas para enfrentar las emergencias climáticas, la pobreza y las desigualdades sociales.
+La plataforma **Nuestra América Verde** es un espacio digital de diálogo y participación que permite a todas y todos colaborar en la construcción del Plan de Recuperación Económica con Justicia Social y Ambiental: documento que presenta medidas concretas para lograr una transformación productiva, económica y social que reduzca la emisión de gases de efecto invernadero y enfrente la pobreza y las desigualdades.
 
 ## Contacto
 
-**Correo electrónico:** [contato@nuestraamericaverde.org](mailto:contato@nuestraamericaverde.org)
+**Correo electrónico:** [contacto@nuestraamericaverde.org](mailto:contacto@nuestraamericaverde.org)
+
+**Facebook:** [@nuestraamericaverde](https://www.facebook.com/nuestraamericaverde)
 
 **Twitter:** [@n_americaverde](https://twitter.com/n_americaverde)
 
