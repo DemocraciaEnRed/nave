@@ -22,7 +22,20 @@ export default class Carrusel extends Component {
         }
         if (topics.length > 0) {
           // Cuidado!! este sorting parece que en chrome no anda
-          topics = topics.sort((t1, t2) => t1.createdAt > t2.createdAt)
+          topics = topics.sort((t1, t2) => {
+            // si empieza con números (opcional espacio al frente)
+            const reg=/^ ?\d+/
+            const regMatch1=reg.exec(t1.mediaTitle)
+            const regMatch2=reg.exec(t2.mediaTitle)
+            if (regMatch1 && regMatch1.length && regMatch2 && regMatch2.length){
+              try{
+                return parseInt(regMatch1[0]) > parseInt(regMatch2[0])
+              }catch(e){
+                return t1.createdAt > t2.createdAt
+              }
+            }else
+              return t1.createdAt > t2.createdAt
+          })
 
           // código de sort original
           /*// ordenamos topics por abiertos y cerrados, y por fechas de cierre
