@@ -44,10 +44,11 @@
     height: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     margin-left: 20px;
 
-    .logo-instagram
+    .logo-instagram, .logo-facebook
       margin-left: 12px;
 
     svg
@@ -64,7 +65,7 @@
       flex-direction: column;
       justify-content: space-evenly;
       margin-left: 12px;
-      .logo-instagram
+      .logo-instagram, .logo-facebook
         margin-left: 0;
       svg
         height: 26px
@@ -124,7 +125,8 @@
       display: flex;
       flex-direction: column;
       float: right;
-      margin-left: 10px;
+      margin-left: 5px;
+      margin-right: -10px;
       .lang-separator
         display: none;
       .header-link
