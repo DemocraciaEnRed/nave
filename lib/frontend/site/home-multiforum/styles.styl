@@ -80,6 +80,16 @@
     text-align: center
     padding-left: 5%;
     padding-right: 5%;
+    &.texto-presentacion
+      @media (min-width: 760px)
+        padding-left: 0
+        padding-right: 0
+      @media (max-width: 760px)
+        margin-left: -6%;
+        width: 100%;
+      @media (max-width: 460px)
+        margin-left: -10px;
+        width: 100%;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
