@@ -380,9 +380,9 @@
   "homepage.forums.subtitle-llamado": "As propostas que compõem esta chamada são:",
   "homepage.forums.subtitle-propuestas": "As propostas que compõem esta consulta são:",
   "homepage.forums.subtitle-ejes": "Os eixos que compõem esta consulta são:",
-  "homepage.presentation.slogan": "Um chamado urgente para construirmos uma saída verde frente a crise econômica, sanitária e climática, e investirmos em um futuro sustentável para todas e todos!",
-  "homepage.presentation.site-description": "Como podemos responder à emergência climática quando nos deparamos com crises devastadoras na Economia e na Saúde?<br /><br /><span class='skyblue'>{platform}</span> é uma aposta radical pela recuperação verde da América Latina. Um movimento da sociedade civil que se une ao Green New Deal Global e convoca os governos a se comprometerem com um futuro justo e sustentável para as próximas gerações.<br /><br />Para isso apresenta um <strong>Plano de Recuperação Econômica com Justiça Social e Ambiental</strong> para a década 2020-2030. Ancorado em três princípios – <strong>realismo científico, cooperação latino-americana e justiça social</strong> – propõe 14 medidas medidas concretas de mitigação, adaptação e financiamento frente aos impactos das mudanças climáticas, e de apoio imediato às famílias pobres e trabalhadoras, população mais afetada pela crise social, econômica e sanitária gerada pela pandemia de Covid-19.",
-  "homepage.presentation.steps-instructions": "Convidamos todas e todos a colaborar no processo participativo do plano 2020-2030 e ajudar a construir uma América Latina com justiça social, econômica e ambiental.",
+  "homepage.presentation.slogan": "Um chamado urgente para construirmos uma saída verde frente a crise econômica, sanitária e climática!",
+  "homepage.presentation.site-description": "<span class='skyblue'>{platform}</span> é uma aposta radical pela recuperação verde da América Latina. Um movimento da sociedade civil que se une ao Green New Deal Global e convoca os governos a se comprometerem com um futuro justo e sustentável para as próximas gerações.<br /><br />Para isso apresenta um <strong>Plano de Recuperação Econômica com Justiça Social e Ambiental</strong> para a década 2020-2030. Ancorado em três princípios – <strong>realismo científico, cooperação latino-americana e justiça social</strong> – propõe 14 medidas medidas concretas de mitigação, adaptação e financiamento frente aos impactos das mudanças climáticas, e de apoio imediato às famílias pobres e trabalhadoras, população mais afetada pela crise social, econômica e sanitária gerada pela pandemia de Covid-19.",
+  "homepage.presentation.steps-instructions": "Te convidamos a colaborar no processo participativo do Plano de Recuperação  2020-2030 e ajudar a construir uma América Latina com justiça social, econômica e ambiental.",
   "homepage.presentation.step1.title": "Conheça as propostas",
   "homepage.presentation.step1.text": "Acesse o Plano de Cooperação 2020-2030 na íntegra.",
   "homepage.presentation.step1.link": "https://drive.google.com/file/d/1US-3-xPrP4XKubeXVQfhHRpvcTFbLYko/view",
@@ -529,7 +529,7 @@
   "settings.user-badges.verify.success": "O usuário foi verificado com sucesso",
 
   "share.siteName": "Colabore na construção do Plano de Recuperação Econômica com Justiça Social e Ambiental!",
-  "share.siteDescription": "Um chamado urgente para construirmos uma saída verde frente a crise econômica, sanitária e climática, e investirmos em um futuro sustentável para todas e todos!",
+  "share.siteDescription": "Um chamado urgente para construirmos uma saída verde frente a crise econômica, sanitária e climática!",
 
   "sidebar.closed": "Fechados",
   "sidebar.hide-voted": "Ocultar votados por mim",
